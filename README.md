@@ -16,6 +16,17 @@ gh run download -R BruceChanJianLe/HyprMac 35964401769 -n HyprMac-app
 
 ## Creating a New Release
 
+Example:
+```bash
+gh release create v0.14.2-1 \
+    --repo BruceChanJianLe/HyprMac \
+    --target feature/move-window-top-bottom-monitor \
+    --title "HyprMac 0.14.2-1" \
+    --notes "Window rules for already-open windows, move window to monitor above or below." \
+    path/to/HyprMac-0.14.2-1.zip
+```
+
+Options:
 ```bash
 gh release create v0.14.1-2 --draft ...              # visible only to you until you publish it
 gh release create v0.14.1-2 --prerelease ...         # marked as pre-release, not shown as "Latest"
